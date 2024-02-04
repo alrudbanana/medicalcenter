@@ -1,0 +1,392 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
+/* ---------------------Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol,li{
+    list-style: none;
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+input{
+    border: none;
+    box-shadow: none;
+}
+input:focus{
+    outline: none;
+}
+button{
+    border: none;
+}
+input::placeholder{
+    color: #fff;
+}
+img {
+    width: 100%;
+    vertical-align: top;
+}
+em{
+    font-style: normal;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.fix-width{
+    width: 1280px;
+    margin: 0 auto;
+}
+.con-gap{
+    margin-top: 200px;
+}
+/* ---------------------Header */
+.topWrap{
+    background-color: pink;
+    padding: 5px 0;
+    border: 1px solid red;
+}
+.left-menu, .right-menu{
+    gap: 0 30px;
+}
+.headerWrap{
+    background-color: aqua;
+    padding: 15px 0;
+}
+header{
+    border: 1px solid red;
+}
+header .logo{
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 5px;
+}
+header img{
+    width: 120px;
+}
+header .gnb{
+    gap: 0 50px;
+}
+.visualWrap{
+    position: relative;
+    border: 3px solid red;
+}
+.visualWrap img{
+    object-fit: cover;
+    height: 500px;
+}
+.txt-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 200px 100px;
+    text-align: center;
+    color: #464444;
+}
+.txt-box h2{
+    font-size: 40px;
+    text-shadow: 0 0 20px #00000080;
+}
+.txt-box h2:nth-child(2){
+    color: #E65174;
+}
+.txt-box span{
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.txt-box .input-box{
+    position: relative;
+}
+.txt-box .input-box input{
+    padding: 10px 100px ;
+    font-size: 1em;
+    border-radius: 20px;
+    background-color: #E65174;
+    color: #fff;
+}
+.txt-box button{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translate(0,-50%);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+}
+.contentWrap{
+    border: 3px solid salmon;
+}
+/* ---------------------content1 */
+.contentWrap .content1{
+    margin-top: 45px;
+    /* border: 3px solid dodgerblue; */
+}
+.contentWrap .content1 .content1-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.contentWrap .content1 .content1-title .quickMenu{
+    border: 1px solid #000;
+    padding: 6px 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+.contentWrap .content1 .content1-title p{
+    margin-top: 15px;
+    font-size: 40px;
+    font-weight: 700;
+    display: block;
+    
+}
+.contentWrap .content1 ,.content1-title em{
+    font-style: normal;
+    padding: 5px 0;
+    border-bottom: 1px dotted #000;
+}
+.contentWrap .content1 .content1-title .strong{
+    color: #E65174;
+}
+.contentWrap .content1 .content1-con{
+}
+.contentWrap .content1 .content1-con .content1-con-top{
+    margin: 0 200px;
+    /* gap: 0 30px; */
+    /* justify-content: flex-start; */
+    margin-bottom: 35px;
+}
+
+.contentWrap .content1 .content1-con .circle{
+    border: 1px solid red;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+/* ---------------------content2 */
+.content2-wrap{
+    background-color: #FDF6F7;
+    padding: 80px 0;
+}
+.content2{
+    /* border: 1px solid red; */
+}
+.content2 .content2-con{
+    margin-top: 80px;
+}
+.content2-wrap .content2 .content2-title span{
+    font-weight: 700;
+    font-size: 22px;
+}
+.content2-wrap .content2 .content2-title h2{
+    font-size: 45px;
+}
+.content2 .content2-con .medical-information{
+    /* border: 1px solid red; */
+    position: relative;
+    padding-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.content2 .content2-con .medical-information:nth-child(1){
+    background-color: #F8DCE0;
+}
+.content2 .content2-con .medical-information:nth-child(2){
+    background-color: #EEBCC7;
+}
+.content2 .content2-con .medical-information:nth-child(3){
+    background-color: #E65174;
+}
+.content2 .content2-con .medical-information .information-title{
+    height: 230px;
+    /* px값이 아니라 padding으로 밀어야 하는지? */
+    align-items: flex-end;
+    padding: 0 15px;
+}
+.content2 .content2-con .medical-information .information-title h2{
+    /* border: 1px solid red; */
+    padding: 10px 0;
+}
+.content2 .content2-con .medical-information .information-content{
+    background-color: #fff;
+    padding: 30px 15px;
+    /* border-radius: 0 0 20px 20px; */
+}
+.content2 .content2-con .medical-information img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+/* ---------------------content3 */
+.content3{
+    /* background-color: aqua; */
+}
+.content3 .new-info{
+    border: 1px solid red;
+    width: 65%;
+}
+.content3 .new-info h2{
+    font-size: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.content3 .new-info .tab-menu{
+    margin: 0 50px 45px 50px;
+}
+.content3 .new-info .new-info-content{
+    border: 1px solid red;
+    margin: 0 50px 0 50px;
+    justify-content: space-around;
+}
+.content3 .new-info .new-info-content div{
+    border: 1px solid red;
+    width: 40%;
+    padding: 80px 30px;
+    position: relative;
+}
+.content3 .new-info .new-info-content div span:nth-child(1){
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content3 .new-info .new-info-content div span:nth-child(2){
+    display: block;
+}
+.content3 .new-info .new-info-content div span:nth-child(3){
+    display: block;
+}
+.content3 .complain{
+    width: 30%;
+    border: 1px saddlebrown solid;
+    border-radius: 20px;
+    padding: 40px 50px;
+}
+.content3 .complain-title{
+    text-align: center;
+}
+.content3 .complain-title h2{
+    font-size: 40px;
+}
+.content3 .complain .complain-content li{
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px dotted red;
+}
+/* ---------------------content4 */
+.content4Wrap{
+    background-color: aqua;
+    padding: 30px 40px;
+}
+.content4{
+    border: 1px solid red;
+    /* justify-content: flex-start; */
+    /* gap: 0 30px; */
+}
+.content4 div{
+    border: 3px solid dodgerblue;
+}
+.content4 div h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+    padding: 0px 50px;
+}
+.content4 div .content4-detail{
+    border: 3px solid darkolivegreen;
+    padding: 20px 50px;
+    font-size: 20px;
+}
+.content4 div .content4-detail .tel{
+    font-size: 30px;
+    font-weight: 700;
+}
+.content4 div .content4-detail .tel p{
+    font-size: 16px;
+}
+.content4 div .content4-detail span:last-child{
+    font-size: 16px;
+    color: #fff;
+}
+/* ---------------------footer */
+.footerWrap{
+    background-color: #F6F6F6;
+}
+footer{
+    padding: 50px 50px;
+    /* justify-content: flex-start; */
+    gap: 0 20px;
+}
+footer .footer-logo{
+    align-items: center;
+}
+footer > div h2{
+    display: block;
+    width: 100%;
+}
+footer .footer-title{
+    font-size: 16px;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+footer .footer-title span{
+    margin-right: 40px;
+}
+footer .footer-title span:nth-child(3){
+    color: #D7021A;
+}
+footer div .footer-info{
+    color: #6D6E73;
+    font-weight: 700;
+}
+footer .site-move{
+    align-items:flex-start;
+    transform: translate(0,-20px);
+}
+footer .site-move div{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 20px 150px 20px 20px;
+    background-color: #fff;
+    color: #000;
+   
+}
+footer .site-move a{
+    padding: 20px;
+    margin-left: 10px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+}
+
+/* -----------tablet */
+@media (max-width: 1024px){
+
+}
+/* -----------mobile */
+@media (max-width: 430px){
+
+}
