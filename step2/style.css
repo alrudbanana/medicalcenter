@@ -59,19 +59,51 @@ em{
 }
 /* ---------------------Header */
 .topWrap{
-    background-color: pink;
-    padding: 5px 0;
-    border: 1px solid red;
+    background-color: #E65174;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 12px;
 }
 .left-menu, .right-menu{
     gap: 0 30px;
 }
+.topWrap .top-header .left-menu p:last-child::after,
+.topWrap .top-header .right-menu p:last-child::after{
+    content: '';
+    display: none;
+}
+
+.topWrap .top-header p{
+    position: relative;
+}
+.topWrap .top-header p::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    margin-right: -20px;
+    /* 중간에 놓고 싶은데 margin으로 미는것이 맞는지? 정확하게 중간이아닌데.. */
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
+}
+.topWrap .top-header .right-menu p:first-child::before{
+    content: "\f015";
+    font-family: fontawesome;
+    margin-right: 5px;
+}
+.topWrap .top-header .right-menu p:nth-child(2)::before{
+    content: "\f57d";
+    font-family: fontawesome;
+    margin: 0 10px 0 10px;
+}
 .headerWrap{
-    background-color: aqua;
     padding: 15px 0;
 }
 header{
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 header .logo{
     justify-content: flex-start;
@@ -82,11 +114,14 @@ header img{
     width: 120px;
 }
 header .gnb{
+    font-size: 18px;
+    font-weight: 400;
     gap: 0 50px;
+    align-items: center;
 }
 .visualWrap{
     position: relative;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 .visualWrap img{
     object-fit: cover;
@@ -99,11 +134,12 @@ header .gnb{
     transform: translate(-50%,-50%);
     padding: 200px 100px;
     text-align: center;
-    color: #464444;
+    color: #fff;
+    
 }
 .txt-box h2{
     font-size: 40px;
-    text-shadow: 0 0 20px #00000080;
+    text-shadow: 1px 1px 2px #222;
 }
 .txt-box h2:nth-child(2){
     color: #E65174;
@@ -132,10 +168,13 @@ header .gnb{
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    background-color: #fff;
+    background-color: #F9D2DB;
+}
+.txt-box button i{
+    color: #fff;
 }
 .contentWrap{
-    border: 3px solid salmon;
+    /* border: 3px solid salmon; */
 }
 /* ---------------------content1 */
 .contentWrap .content1{
@@ -159,7 +198,7 @@ header .gnb{
     display: block;
     
 }
-.contentWrap .content1 ,.content1-title em{
+.contentWrap .content1 .content1-title em{
     font-style: normal;
     padding: 5px 0;
     border-bottom: 1px dotted #000;
@@ -167,20 +206,38 @@ header .gnb{
 .contentWrap .content1 .content1-title .strong{
     color: #E65174;
 }
-.contentWrap .content1 .content1-con{
+.contentWrap .content1 .content1-con div{
+    align-items: center;
+    font-weight: 900;
+    font-size: 16px;
+    gap: 0 20px;
 }
 .contentWrap .content1 .content1-con .content1-con-top{
-    margin: 0 200px;
-    /* gap: 0 30px; */
-    /* justify-content: flex-start; */
+    justify-content: center;
     margin-bottom: 35px;
+}
+.contentWrap .content1 .content1-con .content1-con-down{
+    justify-content: center;
 }
 
 .contentWrap .content1 .content1-con .circle{
-    border: 1px solid red;
-    width: 80px;
-    height: 80px;
+    border: 1px solid #EBEBEB;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
+    object-fit: cover;
+    text-align: center;
+    position: relative;
+}
+
+.contentWrap .content1 .content1-con .circle img{
+    /* width: 60px;
+    height: 60px; */
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 /* ---------------------content2 */
 .content2-wrap{
@@ -189,6 +246,9 @@ header .gnb{
 }
 .content2{
     /* border: 1px solid red; */
+}
+.content2 .content2-title{
+    color: #E65174;
 }
 .content2 .content2-con{
     margin-top: 80px;
@@ -203,91 +263,145 @@ header .gnb{
 .content2 .content2-con .medical-information{
     /* border: 1px solid red; */
     position: relative;
-    padding-top: 30px;
     border-radius: 20px;
     overflow: hidden;
+    width: 30%;
 }
-.content2 .content2-con .medical-information:nth-child(1){
+.content2 .content2-con .medical-information>div {
+    padding: 20px;
+}
+.content2 .content2-con .medical-information:nth-child(1)>div{
     background-color: #F8DCE0;
 }
-.content2 .content2-con .medical-information:nth-child(2){
+.content2 .content2-con .medical-information:nth-child(2)>div{
     background-color: #EEBCC7;
 }
-.content2 .content2-con .medical-information:nth-child(3){
+.content2 .content2-con .medical-information:nth-child(3)>div{
     background-color: #E65174;
 }
 .content2 .content2-con .medical-information .information-title{
     height: 230px;
-    /* px값이 아니라 padding으로 밀어야 하는지? */
     align-items: flex-end;
-    padding: 0 15px;
+    position: relative;
 }
 .content2 .content2-con .medical-information .information-title h2{
-    /* border: 1px solid red; */
-    padding: 10px 0;
+    position: relative;
+    color: #fff;
+    text-shadow: 1px 1px 2px #222;
+    font-size: 30px;
 }
 .content2 .content2-con .medical-information .information-content{
     background-color: #fff;
-    padding: 30px 15px;
+    padding: 30px 20px;
     /* border-radius: 0 0 20px 20px; */
 }
 .content2 .content2-con .medical-information img{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     position: absolute;
-    top: 5%;
-    right: 5%;
+    top: 20px;
+    right: 20px;
 }
 /* ---------------------content3 */
 .content3{
     /* background-color: aqua; */
 }
 .content3 .new-info{
-    border: 1px solid red;
     width: 65%;
+}
+.content3 .tab-menuWrap{
+    position: relative;
 }
 .content3 .new-info h2{
     font-size: 40px;
     margin-bottom: 60px;
     text-align: center;
+    position: relative;
+}
+.content3 .new-info h2::after{
+    content: '';
+    width: 140px;
+    height: 140px;
+    background-color: #F8E4E9;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+.content3 .new-info h2 span{
+    color: #E65174;
 }
 .content3 .new-info .tab-menu{
     margin: 0 50px 45px 50px;
+    justify-content: center;
+    gap: 0 30px;
+    font-size: 16px;
+}
+.content3 .new-info a{
+    font-size: 22px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.content3 .new-info .tab-menu p.on{
+    color: #E65174;
+    position: relative;
+}
+.content3 .new-info .tab-menu p.on::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #E65174;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -30%;
 }
 .content3 .new-info .new-info-content{
-    border: 1px solid red;
-    margin: 0 50px 0 50px;
     justify-content: space-around;
 }
 .content3 .new-info .new-info-content div{
-    border: 1px solid red;
-    width: 40%;
-    padding: 80px 30px;
     position: relative;
+    box-shadow: 0 0 20px #0000002e;
 }
 .content3 .new-info .new-info-content div span:nth-child(1){
-    border: 1px solid #000;
+    background-color: #EBF6F2;
     padding: 5px;
     border-radius: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
+    /* position: absolute;
+    top: 10%;
+    left: 5%; */
+    color: #027D5F;
+    padding:5px 15px;
 }
 .content3 .new-info .new-info-content div span:nth-child(2){
     display: block;
 }
 .content3 .new-info .new-info-content div span:nth-child(3){
     display: block;
+    color: #CACACA;
+    /* position: absolute;
+    bottom:10%;
+    left: 10%; */
 }
 .content3 .complain{
     width: 30%;
-    border: 1px saddlebrown solid;
+    background-color: #E65174;
     border-radius: 20px;
     padding: 40px 50px;
+    color: #fff;
+}
+.content3 .complain-title img{
+    width: 15%;
+    height: 15%;
 }
 .content3 .complain-title{
-    text-align: center;
+    align-items: center;
 }
 .content3 .complain-title h2{
     font-size: 40px;
@@ -295,31 +409,57 @@ header .gnb{
 .content3 .complain .complain-content li{
     padding: 20px 0;
     font-size: 20px;
-    border-bottom: 1px dotted red;
+    border-bottom: 1px dotted #fff;
+    position: relative;
+}
+.content3 .complain .complain-content li::after{
+    content: "\f061";
+    font-family: fontawesome;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0,-50%);
 }
 /* ---------------------content4 */
 .content4Wrap{
-    background-color: aqua;
+    background-color: #FDF6F6;
     padding: 30px 40px;
 }
-.content4{
-    border: 1px solid red;
-    /* justify-content: flex-start; */
-    /* gap: 0 30px; */
-}
 .content4 div{
-    border: 3px solid dodgerblue;
+    font-weight: 700;
 }
 .content4 div h2{
     margin-bottom: 40px;
     font-size: 30px;
-    padding: 0px 50px;
+    padding: 0 0 0 20px;
 }
 .content4 div .content4-detail{
-    border: 3px solid darkolivegreen;
-    padding: 20px 50px;
+    padding: 15px 50px 10px 20px;
+    width: 400px;
+    height: 130px;
     font-size: 20px;
+    position: relative;
 }
+.content4 div .content4-detail img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+.content4Wrap .content4 div:nth-child(1) .content4-detail {
+    background-color: #E65174;
+    border-radius: 30px;
+}
+.content4Wrap .content4 div:nth-child(2) .content4-detail {
+    background-color: #F0ECEC;
+    border-radius: 30px;
+}
+.content4Wrap .content4 div:nth-child(3) .content4-detail {
+    background-color: #F7DFE3;
+    border-radius: 30px;
+}
+
 .content4 div .content4-detail .tel{
     font-size: 30px;
     font-weight: 700;
@@ -367,6 +507,15 @@ footer .site-move{
     transform: translate(0,-20px);
 }
 footer .site-move div{
+    position: relative;
+}
+.site-move i{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(0,-50%);
+}
+footer .site-move div{
     font-size: 16px;
     font-weight: 700;
     padding: 20px 150px 20px 20px;
@@ -382,6 +531,105 @@ footer .site-move a{
     font-weight: 700;
 }
 
-@media screen {
-    
+/* -----------tablet */
+@media (max-width: 1024px){
+    .con-gap{
+        margin-top: 150px;
+    }
+   /* ---------------------Header */
+    .fix-width{
+        width: 100%;
+    }
+    .topWrap .top-header{
+        padding: 0 30px 0 30px;
+    }
+    .headerWrap{
+        padding: 15px 10px;
+    }
+    header .gnb{
+        gap: 0 10px;
+    }
+    .visualWrap img{
+        object-fit: cover;
+        height: 320px;
+    }
+    /* ---------------------content1 */
+    .contentWrap .content1 .content1-con div{
+        gap: 0 10px;
+        font-size: 10px;
+    }
+    .contentWrap .content1 .content1-con .content1-con-top{
+        margin: 0 0 35px 0;
+    }
+    .contentWrap .content1 .content1-con .content1-con-down {
+        gap: 0;
+        margin: 0;
+    }
+    /* ---------------------content2 */
+    .content2-wrap{
+        padding: 80px 30px;
+    }
+    .content2 .content2-con .medical-information p{
+        height: 195px;
+        text-align: center;
+    }
+    .content2 .content2-con .medical-information{
+        width: 30%;
+    }
+    /* ---------------------content3 */
+    .content3{
+        width: 90%;
+        margin: 150px auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content3 .new-info{
+        width: 100%;
+    }
+    .content3 .new-info .new-info-content{
+        justify-content: space-between;
+    }
+    .content3 .new-info .new-info-content div{
+        width: 30%;
+        height: 250px;
+        padding: 0 30px;
+    }
+    .content3 .new-info .new-info-content div span:nth-child(1){
+        display: inline-block;
+        margin: 30px 0;
+        /* padding: 10px 10px; */
+    }
+    .content3 .new-info .new-info-content div span:nth-child(3){
+        display: block;
+        color: #CACACA;
+        margin-top: 20px;
+    }
+    .content3 .complain{
+        width: 100%;
+    }
+    /* ---------------------content4 */
+    .content4{
+        flex-wrap: wrap;
+        gap: 30px 0;
+    }
+    .content2 .content2-con .medical-information img{
+        top: 50%;
+        left: 5%;
+        transform: translate(0,-50%);
+    }
+    .content4 div .content4-detail{
+        padding: 10px 20px;
+        width: 100%;
+        /* height: 100%; */
+        font-size: 20px;
+        position: relative;
+    }
+    .content4Wrap .content4 div:nth-child(3) .content4-detail {
+        width: 300px;
+    }
+   
+}
+/* -----------mobile */
+@media (max-width: 430px){
+
 }

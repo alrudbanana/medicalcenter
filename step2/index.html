@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko-KR">
 
 <head>
     <meta charset="UTF-8">
@@ -10,21 +10,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dc3e7a6968.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="topWrap">
         <div class="top-header flex fix-width">
             <div class="left-menu flex">
-                <p>title</p>
-                <p>title</p>
-                <p>title</p>
-                <p>title</p>
+                <p>보령시청</p>
+                <p>보령 문화관광</p>
+                <p>보령TV</p>
+                <p>호우현황</p>
             </div>
             <div class="right-menu flex">
-                <p>title</p>
-                <p>title</p>
-                <p>title</p>
+                <p>홈으로</p>
+                <p>Language</p>
+                <p>누리집 보러가기</p>
             </div>
         </div>
     </div>
@@ -34,15 +35,15 @@
                 <img src="../images/logo.png" alt="">
                 <h2>보건소</h2>
             </div>
-            <div class="gnb flex">
-                <a href="#">menu1</a>
-                <a href="#">menu2</a>
-                <a href="#">menu3</a>
-                <a href="#">menu4</a>
-                <a href="#">menu5</a>
-                <a href="#">menu6</a>
-            </div>
-            <div class="ham-menu">icon</div>
+            <ul class="gnb flex">
+                <li><a href="#">보건소 소개</a></li>
+                <li><a href="#">진료/검진</a></li>
+                <li><a href="#">사업안내</a></li>
+                <li><a href="#">국가예방접종</a></li>
+                <li><a href="#">민원상담실</a></li>
+                <li><a href="#">알림마당</a></li>
+                <i class="fa-solid fa-bars ham-menu"></i>
+            </ul>
         </header>
     </div>
     <div class="visualWrap">
@@ -55,7 +56,9 @@
             <span>보령시 보건소는 시민건강을 지향합니다.</span>
             <div class="input-box">
                 <input type="text" name="" id="" placeholder="검색어를 입력해주세요">
-                <button type="submit">버튼</button>
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </div>
         </div>
     </div>
@@ -72,52 +75,69 @@
             <div class="content1-con">
                 <div class="content1-con-top flex">
                     <div class="flex">
-                        <div class="circle">circle</div>
+                        <div class="circle">
+                            <img src="../images/information.png" alt="">
+                        </div>
                         <p>보건 민원안내</p>
                     </div>
                     <div class="flex">
-                        <div class="circle">circle</div>
-                        <p>보건 민원안내</p>
+                        <div class="circle">
+                            <img src="../images/medical.png" alt="">
+                        </div>
+                        <p>의료지원사업</p>
                     </div>
                     <div class="flex">
-                        <div class="circle">circle</div>
-                        <p>보건 민원안내</p>
+                        <div class="circle">
+                            <img src="../images/hospital-building.png" alt="">
+                        </div>
+                        <p>당직의료기관 및 약국</p>
                     </div>
                     <div class="flex">
-                        <div class="circle">circle</div>
-                        <p>보건 민원안내</p>
+                        <div class="circle">
+                            <img src="../images/praying.png" alt="">
+                        </div>
+                        <p>보건소에 바란다</p>
                     </div>
                 </div>
 
                 <div class="content1-con-down flex">
                     <div class="flex">
-                        <div class="circle">circle</div>
-                        <p>보건 민원안내</p>
+                        <div class="circle">
+                            <img src="../images/health.png" alt="">
+                        </div>
+                        <p>질병관리</p>
                     </div>
                     <div class="flex">
-                        <div class="circle">circle</div>
-                        <p>보건 민원안내</p>
+                        <div class="circle">
+                            <img src="../images/heart.png" alt="">
+                        </div>
+                        <p>암 검진</p>
                     </div>
                     <div class="flex">
-                        <div class="circle">circle</div>
-                        <p>보건 민원안내</p>
+                        <div class="circle">
+                            <img src="../images/mental.png" alt="">
+                        </div>
+                        <p>정신보조</p>
                     </div>
                     <div class="flex">
-                        <div class="circle">circle</div>
-                        <p>보건 민원안내</p>
+                        <div class="circle">
+                            <img src="../images/fammily-care.png" alt="">
+                        </div>
+                        <p>가족건강</p>
                     </div>
                     <div class="flex">
-                        <div class="circle">circle</div>
-                        <p>보건 민원안내</p>
+                        <div class="circle">
+                            <img src="../images/x-ray.png" alt="">
+                        </div>
+                        <p>원격 영상 진료</p>
                     </div>
                     <div class="flex">
-                        <div class="circle">circle</div>
-                        <p>보건 민원안내</p>
+                        <div class="circle">
+                            <img src="../images/vaccin.png" alt="">
+                        </div>
+                        <p>예방접종</p>
                     </div>
-                    <div class="flex">
-                        <div class="circle">circle</div>
-                        <p>보건 민원안내</p>
-                    </div>
+    
                 </div>
             </div>
         </div>
@@ -130,35 +150,35 @@
                 <div class="content2-con flex">
                     <div class="medical-information">
                         <div class="information-title flex">
+                            <img src="../images/free-icon-health-screening-12773091.png" alt="">
+                            <h2>외과진료</h2>
+                        </div>
+                        <p class="information-content">
+                            당뇨, 고혈압 및 기타 내과질환 <br>
+                            방사선촬영 (흉부촬영), 임상병리검사 등 <br>
+                            건강상담 등
+                        </p>
+                    </div>
+                    <div class="medical-information">
+                        <div class="information-title flex">
                             <img src="../images/dental2.png" alt="">
-                            <h2>외과진료</h2>
+                            <h2>치과진료</h2>
                         </div>
-                        <ul class="information-content">
-                            <li>당뇨, 고혈압 및 기타 내과질환</li>
-                            <li>방사선촬영 (흉부촬영), 임상병리검사 등</li>
-                            <li>건강상담 등</li>
-                        </ul>
+                        <p class="information-content">
+                            충치 (치아우식증) 치료, 치주 (잇몸) 치료 <br>
+                            발치 및 기타 구강질환 치료 및 상담 <br>
+                            스케일링, 의치 (틀니), 보철은 하지 않습니다.
+                        </p>
                     </div>
                     <div class="medical-information">
                         <div class="information-title flex">
-                            <img src="../images/health.png" alt="">
-                            <h2>외과진료</h2>
+                            <img src="../images/herdal.png" alt="">
+                            <h2>한방 치료</h2>
                         </div>
-                        <ul class="information-content">
-                            <li>당뇨, 고혈압 및 기타 내과질환</li>
-                            <li>방사선촬영 (흉부촬영), 임상병리검사 등</li>
-                            <li>건강상담 등</li>
-                        </ul>
-                    </div>
-                    <div class="medical-information">
-                        <div class="information-title flex">
-                            <img src="../images/health.png" alt="">
-                            <h2>외과진료</h2>
-                        </div>
-                        <ul class="information-content">
-                            <li>당뇨, 고혈압 및 기타 내과질환</li>
-                            <li>방사선촬영 (흉부촬영), 임상병리검사 등</li>
-                            <li>건강상담 등</li>
+                        <p class="information-content">
+                            진료과 (한방침구과, 한방내과,한방부인과) <br>
+                            침, 부황, 뜸, 투약 등 <br>
+                            한방보건상담 등
                         </ul>
                     </div>
                 </div>
@@ -166,13 +186,17 @@
         </div>
         <div class="content3 flex con-gap fix-width">
             <div class="new-info">
-                <h2>새소식</h2>
-                <div class="tab-menu flex">
-                    <!-- tab button p태그 ? -->
-                    <p>공지사항</p>
-                    <p>공지사항</p>
-                    <p>공지사항</p>
-                    <a href="#">더보기</a>
+                <h2>보건소 <span>새소식</span></h2>
+                <div class="tab-menuWrap">
+                    <div class="tab-menu flex">
+                        <!-- tab button p태그 ? -->
+                        <p class="on">공지사항</p>
+                        <p>고시공고</p>
+                        <p>입찰정보</p>
+                    </div>
+                    <a href="#">
+                        <i class="fa-solid fa-plus"></i>
+                    </a>
                 </div>
                 <div class="new-info-content flex">
                     <div>
@@ -185,19 +209,24 @@
                         <span>성인 유료접종(장티푸스) 안내</span>
                         <span>2024.01.11</span>
                     </div>
+                    <div>
+                        <span>공지사항</span>
+                        <span>성인 유료접종(장티푸스) 안내</span>
+                        <span>2024.01.11</span>
+                    </div>
                 </div>
             </div>
-            <div class="complain">
-                <div class="complain-title">
-                    <h2>민원</h2>
-                    <h2>img</h2>
-                    <span>detail</span>
+            <div class="complain con-gap">
+                <div class="complain-title flex">
+                    <h2>보령보건 민원</h2>
+                    <img src="../images/information.png" alt="">
                 </div>
+                <span>구민 민원에 최선을 다하겠습니다.</span>
                 <ul class="complain-content">
                     <li>예방접종</li>
-                    <li>예방접종</li>
-                    <li>예방접종</li>
-                    <li>예방접종</li>
+                    <li>금연사업</li>
+                    <li>대사증후군 센터이용 </li>
+                    <li>효사랑주치의 안내</li>
                 </ul>
             </div>
         </div>
@@ -215,24 +244,22 @@
                 </div>
 
                 <div>
-                    <h2>고객센터</h2>
+                    <h2>찾아오시는 길</h2>
                     <div class="content4-detail">
-                        <em class="tel">
-                            041-930-0900,5910
-                            <p>(보건행정과)</p>
-                        </em>
-                        <span>근무시간 : 월 ~ 금요일 09:00 ~ 18:00</span>
+                        <p>
+                            충남 보령시 남포면 보령남로 234
+                        </p>
+                        <img src="../images/free-icon-map-235861.png" alt="">
                     </div>
                 </div>
 
                 <div>
-                    <h2>고객센터</h2>
+                    <h2>보건사업 안내</h2>
                     <div class="content4-detail">
-                        <em class="tel">
-                            041-930-0900,5910
-                            <p>(보건행정과)</p>
-                        </em>
-                        <span>근무시간 : 월 ~ 금요일 09:00 ~ 18:00</span>
+                        <p>
+                            보건사업
+                        </p>
+                        <img src="../images/cardiology.png" alt="">
                     </div>
                 </div>
             </div>
@@ -261,7 +288,11 @@
                 </div>
             </div>
             <div class="flex site-move">
-                <div>관련사이트로 이동</div>
+                <div>
+                    <span>관련사이트로 이동</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                
                 <a href="#">이동</a>
             </div>
         </footer>
