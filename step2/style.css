@@ -521,7 +521,6 @@ footer .site-move div{
     padding: 20px 150px 20px 20px;
     background-color: #fff;
     color: #000;
-   
 }
 footer .site-move a{
     padding: 20px;
@@ -548,6 +547,7 @@ footer .site-move a{
     }
     header .gnb{
         gap: 0 10px;
+        font-size: 16px;
     }
     .visualWrap img{
         object-fit: cover;
@@ -626,6 +626,19 @@ footer .site-move a{
     }
     .content4Wrap .content4 div:nth-child(3) .content4-detail {
         width: 300px;
+    }
+    /* ---------------------footer */
+    footer{
+        flex-wrap: wrap;
+        position: relative;
+    }
+    footer >div{
+        padding-top: 50px;
+    }
+    footer .site-move{
+        position: absolute;
+        transform: translate(0,-20px);
+        right: 0;
     }
    
 }
