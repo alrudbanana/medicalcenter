@@ -14,7 +14,8 @@
 </head>
 
 <body>
-    <div class="topWrap">
+   <div class="wrap">
+    <div class="topWrap pc">
         <div class="top-header flex fix-width">
             <div class="left-menu flex">
                 <p>보령시청</p>
@@ -29,7 +30,7 @@
             </div>
         </div>
     </div>
-    <div class="headerWrap">
+    <div class="headerWrap pc">
         <header class="flex fix-width">
             <div class="logo flex">
                 <img src="../images/logo.png" alt="">
@@ -46,6 +47,16 @@
             </ul>
         </header>
     </div>
+    <header class="mobile headerWrap">
+        <div class="flex">
+            <i class="fa-solid fa-bars"></i>
+            <div class="flex">
+                <img src="../images/logo.png" alt="">
+                <h2>보건소</h2>
+            </div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </header>
     <div class="visualWrap">
         <img src="../images/happy-family.jpg" alt="">
         <div class="txt-box">
@@ -72,7 +83,7 @@
                     </em>
                 </p>
             </div>
-            <div class="content1-con">
+            <div class="content1-con pc">
                 <div class="content1-con-top flex">
                     <div class="flex">
                         <div class="circle">
@@ -140,12 +151,81 @@
     
                 </div>
             </div>
+            <div class="content1-con mobile">
+                <div class="content1-con">
+                    <div class="content1-con-top flex">
+                        <div class="flex">
+                            <div class="circle">
+                                <img src="../images/information.png" alt="">
+                            </div>
+                            <p>보건 민원안내</p>
+                        </div>
+                        <div class="flex">
+                            <div class="circle">
+                                <img src="../images/medical.png" alt="">
+                            </div>
+                            <p>의료지원사업</p>
+                        </div>
+                        <div class="flex">
+                            <div class="circle">
+                                <img src="../images/hospital-building.png" alt="">
+                            </div>
+                            <p>당직의료기관 및 약국</p>
+                        </div>
+                        <div class="flex">
+                            <div class="circle">
+                                <img src="../images/praying.png" alt="">
+                            </div>
+                            <p>보건소에 바란다</p>
+                        </div>
+                        <div class="flex">
+                            <div class="circle">
+                                <img src="../images/health.png" alt="">
+                            </div>
+                            <p>질병관리</p>
+                        </div>
+                        <div class="flex">
+                            <div class="circle">
+                                <img src="../images/heart.png" alt="">
+                            </div>
+                            <p>암 검진</p>
+                        </div>
+                        <div class="flex">
+                            <div class="circle">
+                                <img src="../images/mental.png" alt="">
+                            </div>
+                            <p>정신보조</p>
+                        </div>
+                        <div class="flex">
+                            <div class="circle">
+                                <img src="../images/fammily-care.png" alt="">
+                            </div>
+                            <p>가족건강</p>
+                        </div>
+                        <div class="flex">
+                            <div class="circle">
+                                <img src="../images/x-ray.png" alt="">
+                            </div>
+                            <p>원격 영상 진료</p>
+                        </div>
+                        <div class="flex">
+                            <div class="circle">
+                                <img src="../images/vaccin.png" alt="">
+                            </div>
+                            <p>예방접종</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="content2-wrap con-gap">
             <div class="content2 fix-width">
-                <div class="content2-title">
+                <div class="content2-title pc">
                     <span>꼭 필요할때 도움이 되는 </span>
                     <h2>진료 서비스</h2>
+                </div>
+                <div class="content2-title mobile">
+                    <span>보건소 진료 <span>서비스</span></span>
                 </div>
                 <div class="content2-con flex">
                     <div class="medical-information">
@@ -185,7 +265,7 @@
             </div>
         </div>
         <div class="content3 flex con-gap fix-width">
-            <div class="new-info">
+            <div class="new-info pc">
                 <h2>보건소 <span>새소식</span></h2>
                 <div class="tab-menuWrap">
                     <div class="tab-menu flex">
@@ -216,6 +296,33 @@
                     </div>
                 </div>
             </div>
+            <div class="m-new-info mobile">
+                <div class="tab-menu flex">
+                    <p class="on">공지사항</p>
+                    <p>고시공고</p>
+                    <p>입찰정보</p>
+                    <p class="plus">
+                        <a href="#">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                        
+                    </p>
+                </div>
+                <div class="new-info-content">
+                    <div>
+                        <p class="title">마이코플라스마 폐렴균, 유행에 대비하세요!</p>
+                        <p class="detail">마이코플라스마 폐렴균에 의한 급성 호흡기 감염증으로 연중 발생 가능하지만 4~7년 주기로 유행하고, 주로 늦가을~초봄에 유행합니다.</p>
+                    </div>
+                    <div class="flex">
+                        <span>성인 유료접종(장티푸스) 안내</span>
+                        <span>2024.01.11</span>
+                    </div>
+                    <div class="flex">
+                        <span>성인 유료접종(장티푸스) 안내</span>
+                        <span>2024.01.11</span>
+                    </div>
+                </div>
+            </div>
             <div class="complain con-gap">
                 <div class="complain-title flex">
                     <h2>보령보건 민원</h2>
@@ -230,7 +337,7 @@
                 </ul>
             </div>
         </div>
-        <div class="content4Wrap con-gap">
+        <div class="content4Wrap con-gap pc">
             <div class="content4 flex fix-width">
                 <div>
                     <h2>고객센터</h2>
@@ -264,8 +371,26 @@
                 </div>
             </div>
         </div>
+        <div class="content4 mobile">
+           <div class="content4-title">
+                <h2>보건소 안내</h2>
+                <span>진료시간</span>
+                <span>월 ~ 금요일 09:00 ~ 18:00 (점심 12:00 ~ 13:00)</span>
+           </div>
+            <div class="content4-info flex">
+                <div>
+                    <a href="#">고객센터 전화번호 안내</a>
+                </div>
+                <div>
+                    <a href="#">찾아 오시는 길</a>
+                </div>
+                <div>
+                    <a href="#">보건사업 안내</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="footerWrap">
+    <div class="footerWrap pc">
         <footer class="con-gap flex">
             <div class="flex footer-logo">
                 <img src="../images/logo.png" alt="">
@@ -297,6 +422,24 @@
             </div>
         </footer>
     </div>
+    <div class="footer-top con-gap">
+        <div class="footer-top-content">
+            <a href="#">이용약관</a>
+            <a href="#">정보처리기기 운영방침</a>
+            <a href="#" class="private">개인정보처리방침</a>
+            <a href="#">온라인도우미</a>
+        </div>
+    </div>
+    <div class="footerWrap mobile">
+        <footer>
+            <div class="footer-down flex">
+                <img src="../images/logo.png" alt="">
+                <p>[33493] 충청남도 보령시 남포면 보령남로 234대표전화 041-930-0900 팩스 041-930-5909<br>
+                Copyright ⓒ 포트폴리오를 위해 제작된 비 상업적용 사이트입니다.</p>
+            </div>
+        </footer>
+    </div>
+   </div>
 </body>
 
 </html>
