@@ -107,10 +107,9 @@ em{
 }
 .headerWrap{
     padding: 15px 0;
+    position: relative;
 }
-header{
-    /* border: 1px solid red; */
-}
+
 header .logo{
     justify-content: flex-start;
     align-items: center;
@@ -125,13 +124,41 @@ header .gnb{
     gap: 0 50px;
     align-items: center;
 }
-.sub{
-    z-index: 1;
-    display: none;
+header .gnb li{
+    position: relative;
+    transition: all 0.1s;
 }
-.sub li{
-    padding: 5px 10px;
-    transition: all 0.5s;
+header .gnb li a{
+    display: block;
+}
+.sub{
+    z-index: 3;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+header .sub li{
+    transition: all 0.4s;
+    width: 200px;
+    color: #6D6E73;
+}
+header .sub li:hover{
+    color: #E65174;
+    font-weight: 700;
+}
+.sub li a{
+    padding: 5px 0px;
+}
+.headerWrap .bg-gnb {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffffa0;
+    display: none;
+    z-index: 2;
+    transition: all 0.2s;
 }
 .visualWrap{
     position: relative;
@@ -145,7 +172,7 @@ header .gnb{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    padding: 200px 100px;
+    /* padding: 200px 100px; */
     text-align: center;
     color: #fff;
 }
@@ -358,6 +385,9 @@ header .gnb{
     top: 0;
     right: 0;
 }
+.content3 .new-info .tab-menu p{
+    transition: color 0.3s;
+}
 .content3 .new-info .tab-menu p.on{
     color: #E65174;
     position: relative;
@@ -432,6 +462,7 @@ header .gnb{
     border-bottom: 1px dotted #fff;
     position: relative;
 }
+
 .content3 .complain .complain-content li::after{
     content: "\f061";
     font-family: fontawesome;
